@@ -139,3 +139,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 }
+
+.ritsu {
+	overflow: hidden;
+}
