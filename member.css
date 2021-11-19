@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* font face */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+/* style css */
+body {
+    font: 18px/36px 'Work Sans', sans-serif;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px white;
+}
+
+.container {
+    width: 750px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    margin: auto;
+    padding: 23px;
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, .5);
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.gallery li,
+.gallery li a img,
+.gallery li span {
+    border-radius: 50%;
+}
+
+.gallery li span {
+    font-size: 14px;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(250, 250, 250, .8);
+    text-align: center;
+    line-height: 120px;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(202, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.gallery li span:hover {
+    opacity: 1;
+    animation: zoomNfades 300ms;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 999;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.overlay img {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    animation: zoom 500ms;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 80px;
+    left: 470px;
+    color: white;
+    font-weight: 100;
+}
+
+.overlay .next-perent .next {
+    width: 270px;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.overlay .next {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 280px;
+    right: 250px;
+}
+
+.overlay .next:hover {
+    animation-name: next;
+    animation-duration: 1800ms;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;}
+
+@keyframes next {
+    from {
+        position: absolute;
+        top: 280px;
+        right: 250px;
+    }
+    to {
+        position: absolute;
+        top: 280px;
+        right: 180px;
+    }
+}
+
+.overlay .azusa {
+    width: 413px;
+    max-height: 557px;
+}
+
+.close:hover {
+    color: red;
+    margin-top: -5px;
+    text-decoration: underline red;
+    transition: 300ms;
+}
+
+.overlay:target img {
+    animation: zoom 800ms;
+}
+
+
+
+@keyframes zoomNfades {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+/* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */
+
+/* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */
+
+/* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */  /* NEW NEW NEW */
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 200px;
+    text-shadow: 2px 2px 3px white;
+}
+
+.image {
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .1);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.image-1 {
+    width: 900px;
+    height: 550px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .1);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 600ms;
+}
+
+.image li .picture {
+    width: 900px;
+    height: 500px;
+}
+
+.image-1 li .picture-1 {
+    width: 900px;
+    height: 550px;
+    transition: 600ms;
+}
+
+.image li span {
+    width: 255px;
+    height: 500px;
+    background-color: rgba(200, 200, 200, .3);
+    display: block;
+    position: absolute;
+    top: 618px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li span:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_1 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+
+.overlay .close-1 {
+    position: absolute;
+    top: 105px;
+    left: 325px;
+    color: white;
+    font-weight: 100;
+}
+
+.overlay .close-1:hover {
+    color: red;
+    text-decoration: red underline;
+    margin-top: -5px;
+    transition: 200ms;
+}
+
+.overlay .next-perent-1 .next-1 {
+    width: 270px;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.overlay .next-1 {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 290px;
+    right: 100px;
+}
+
+.overlay .next-1:hover {
+    animation-name: next-1;
+    animation-duration: 1800ms;
+    animation-delay: 200ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;}
+
+@keyframes next-1 {
+    from {
+        position: absolute;
+        top: 290px;
+        right: 100px;
+    }
+    to {
+        position: absolute;
+        top: 290px;
+        right: 60px;
+    }
+}
+
+
+/* YUIIIIIII*/
+
+
+.image li a .yui-keion {
+    width: 98px;
+    height: 419px;
+    background-color: rgba(200, 200, 200, .5);
+    display: block;
+    position: absolute;
+    top: 618px;
+    right: 771px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li a .yui-keion:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_2 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+
+
+/* MIOOOOOO*/
+
+
+.image li a .mio-keion {
+    width: 98px;
+    height: 419px;
+    background-color: rgba(200, 200, 200, .5);
+    display: block;
+    position: absolute;
+    top: 618px;
+    right: 642px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li a .mio-keion:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_3 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+
+
+/* RITSUUUUUUUU*/
+
+
+.image li a .ritsu-keion {
+    width: 98px;
+    height: 419px;
+    background-color: rgba(200, 200, 200, .5);
+    display: block;
+    position: absolute;
+    top: 618px;
+    right: 513px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li a .ritsu-keion:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_4 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+
+
+/* MUGIIIIIIII*/
+
+
+.image li a .mugi-keion {
+    width: 98px;
+    height: 419px;
+    background-color: rgba(200, 200, 200, .5);
+    display: block;
+    position: absolute;
+    top: 618px;
+    right: 384px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li a .mugi-keion:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_5 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+
+
+/* AZUSAAAAAA */
+
+
+.image li a .azusa-keion {
+    width: 98px;
+    height: 419px;
+    background-color: rgba(200, 200, 200, .5);
+    display: block;
+    position: absolute;
+    top: 618px;
+    right: 255px;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.image li a .azusa-keion:hover {
+    opacity: 1;
+}
+
+.image .overlay .keion_6 {
+    margin-top: 25px;
+    width: 700px;
+    max-height: 100%;
+}
+/*
+.image_1 {
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .5);
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.image_1 li .picture_1 {
+    width: 800px;
+    height: 500px;
+}
+*/
+
+
+
+
+
+
+
+.kembali {
+    font-family: normal;
+    text-align: center;
+    font-size: 15px;
+    font-variant: initial;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
